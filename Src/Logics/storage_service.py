@@ -44,6 +44,56 @@ class storage_service:
         turns =  processing().process( filter.data )
         return turns
     
+
+    def create_turns_by_nomen(self, start_period: datetime, stop_period:datetime, nomen_id: str) -> dict:
+        """
+            Получить обороты за период по номенклатуре
+        Args:
+            start_period (datetime): _description_
+            stop_period (datetime): _description_
+
+        Returns:
+            dict: _description_
+        """
+        exception_proxy.validate(start_period, datetime)
+        exception_proxy.validate(stop_period, datetime)
+        
+        if start_period > stop_period:
+            raise argument_exception("Некорректно переданы параметры!")
+        
+        # Фильтруем      
+        prototype = storage_prototype(  self.__data )  
+        filter = prototype.filter( start_period, stop_period)
+        filter = filter.filter_by_nomenclature(nomen_id)
+            
+        # Подобрать процессинг    
+        key_turn = process_factory.turn_key()
+        processing = process_factory().create( key_turn  )
+    
+        # Обороты
+        turns =  processing().process( filter.data )
+        return turns
+
+    def create_transactions(self, receipt: receipe_model, storage: storage_model):
+
+
+        prototype = storage_prototype(  self.__data )  
+        filter = prototype.filter_by_receipt(receipt)
+        filter = filter.filter_by_storage(storage)
+        if len(self.__data) != len(filter.data):
+            raise operation_exception("Невозможность списания! Элемент отсутствует в списке номенклатуры")
+        
+        data = receipt.consist.values()
+
+        # Подобрать процессинг    
+        transaction_key = process_factory.transaction_key()
+        processing = process_factory().create( transaction_key )
+    
+        # Транзакции
+        transactions =  processing().process( data )
+        return transactions
+
+
     @staticmethod        
     def create_response( data: list, app):
         """"
