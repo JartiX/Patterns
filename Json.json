@@ -1,0 +1,1248 @@
+[
+    {
+        "description": "",
+        "id": "e884f48467574ff8b27e52a5a71385a8",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "3244242696044347875a3063d854b2f4",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "e8cbbd8b6fd4417c9c24b7b2531c8a24",
+            "is_error": false,
+            "name": "Яйца",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "80444714752849149b69dca38b6d1316",
+                    "is_error": false,
+                    "name": "штука"
+                },
+                "coefficient": 10,
+                "description": "",
+                "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+                "is_error": false,
+                "name": "десяток"
+            }
+        },
+        "period": "2024-January-03 00:00",
+        "size": 3,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "0a2dbcec7a5d441cb72ac4ae2d901244",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "d6141534ef1242a7ab6ba335b6907c61",
+            "is_error": false,
+            "name": "type",
+            "type": true
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "80444714752849149b69dca38b6d1316",
+                "is_error": false,
+                "name": "штука"
+            },
+            "coefficient": 10,
+            "description": "",
+            "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+            "is_error": false,
+            "name": "десяток"
+        }
+    },
+    {
+        "description": "",
+        "id": "345e087c7dfe4cba9f569fce94e1073b",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "ae1b6aa733b54013b189b999ff5de602",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "fbd5767a338c451185ef67ba90de5988",
+            "is_error": false,
+            "name": "Помидор",
+            "unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "c5aa2cebbb52410b933340c04dd28a59",
+                "is_error": false,
+                "name": "штука"
+            }
+        },
+        "period": "2024-February-03 00:00",
+        "size": 1,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "1c699a508409445da896b54663faef5b",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "6cc1fa51303e46c686763266bd0f131e",
+            "is_error": false,
+            "name": "type",
+            "type": false
+        },
+        "unit": {
+            "base_unit": "None",
+            "coefficient": 1,
+            "description": "",
+            "id": "c5aa2cebbb52410b933340c04dd28a59",
+            "is_error": false,
+            "name": "штука"
+        }
+    },
+    {
+        "description": "",
+        "id": "08c0e72efa964e09842dc703d55b5cb5",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "2950dc6c1a4f457f89abf38a619e4b4c",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "545896e3a61440dfa050538e0ec38aa2",
+            "is_error": false,
+            "name": "Яйца",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "80444714752849149b69dca38b6d1316",
+                    "is_error": false,
+                    "name": "штука"
+                },
+                "coefficient": 10,
+                "description": "",
+                "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+                "is_error": false,
+                "name": "десяток"
+            }
+        },
+        "period": "2024-March-03 00:00",
+        "size": 2,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "cbf8d62adff548b090d356bb08ca2424",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "2490bdc1e20c4d5f9fa873a2056b5daa",
+            "is_error": false,
+            "name": "type",
+            "type": false
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "80444714752849149b69dca38b6d1316",
+                "is_error": false,
+                "name": "штука"
+            },
+            "coefficient": 10,
+            "description": "",
+            "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+            "is_error": false,
+            "name": "десяток"
+        }
+    },
+    {
+        "description": "",
+        "id": "6ce2fa327ea54eceb99497eeace0b26d",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "dd4e59e4f1314b7fb1d06fecbbfc850e",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "fb4c8f51bff94feba5e3c28debc650d8",
+            "is_error": false,
+            "name": "Яйца",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "80444714752849149b69dca38b6d1316",
+                    "is_error": false,
+                    "name": "штука"
+                },
+                "coefficient": 10,
+                "description": "",
+                "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+                "is_error": false,
+                "name": "десяток"
+            }
+        },
+        "period": "2024-April-03 00:00",
+        "size": 3,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "277bd05bbff24203a3bf9bf9b9f7c619",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "78c424ba287245de9e193079794d2186",
+            "is_error": false,
+            "name": "type",
+            "type": true
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "80444714752849149b69dca38b6d1316",
+                "is_error": false,
+                "name": "штука"
+            },
+            "coefficient": 10,
+            "description": "",
+            "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+            "is_error": false,
+            "name": "десяток"
+        }
+    },
+    {
+        "description": "",
+        "id": "26665b7128d24fb18c5d81100552daa5",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "f50a5cd266f1451c87cb423475f7ad0b",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "d374e40bd62749319102e412b75ec272",
+            "is_error": false,
+            "name": "Помидор",
+            "unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "c5aa2cebbb52410b933340c04dd28a59",
+                "is_error": false,
+                "name": "штука"
+            }
+        },
+        "period": "2024-May-03 00:00",
+        "size": 1,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "e50207266d8c4a749aaba05793964b06",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "54208b08d5514524925abb05bcecf668",
+            "is_error": false,
+            "name": "type",
+            "type": false
+        },
+        "unit": {
+            "base_unit": "None",
+            "coefficient": 1,
+            "description": "",
+            "id": "c5aa2cebbb52410b933340c04dd28a59",
+            "is_error": false,
+            "name": "штука"
+        }
+    },
+    {
+        "description": "",
+        "id": "d95fe1d412f74fa0927f05c26de4112f",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "e25f25cc0812483186ec3c0079e6eb87",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "8bfeb0f1494d41ef8fc16670966d835d",
+            "is_error": false,
+            "name": "Кабачковая икра",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "38ea2720751146f0a023305952fcd656",
+                    "is_error": false,
+                    "name": "грамм"
+                },
+                "coefficient": 1000,
+                "description": "",
+                "id": "be3157910ce5463599ad78a413d2224f",
+                "is_error": false,
+                "name": "киллограмм"
+            }
+        },
+        "period": "2024-February-03 00:00",
+        "size": 2,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "61ca86910be247e6be126cf00579b385",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "f01ba86c0808452a883c4fdbe2054877",
+            "is_error": false,
+            "name": "type",
+            "type": true
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "38ea2720751146f0a023305952fcd656",
+                "is_error": false,
+                "name": "грамм"
+            },
+            "coefficient": 1000,
+            "description": "",
+            "id": "be3157910ce5463599ad78a413d2224f",
+            "is_error": false,
+            "name": "киллограмм"
+        }
+    },
+    {
+        "description": "",
+        "id": "55377f1b1cc440e4a0ac1d11c790b41e",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "24964d28d240428aa3d1f6b2dfda7328",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "b3a9bf0a3ecb4560b094923f88b51ae5",
+            "is_error": false,
+            "name": "Арбуз",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "95126c0e31cd464c9a83e8e3dd840c8e",
+                    "is_error": false,
+                    "name": "штука"
+                },
+                "coefficient": 10,
+                "description": "",
+                "id": "d8335e4712eb49d68c40a38b4ada1445",
+                "is_error": false,
+                "name": "сотня"
+            }
+        },
+        "period": "2024-June-03 00:00",
+        "size": 3,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "6ff40d371cf345f89facc2765745293e",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "2df4f11fa6f34006bd67b28e3a58c56f",
+            "is_error": false,
+            "name": "type",
+            "type": true
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "95126c0e31cd464c9a83e8e3dd840c8e",
+                "is_error": false,
+                "name": "штука"
+            },
+            "coefficient": 10,
+            "description": "",
+            "id": "d8335e4712eb49d68c40a38b4ada1445",
+            "is_error": false,
+            "name": "сотня"
+        }
+    },
+    {
+        "description": "",
+        "id": "7de19fc79e654c4d93cb02e8ffbd69a7",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "96f54ad3eeae4965af2ec56a99d9bc23",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "c310f50421b94937b44bf83de9878988",
+            "is_error": false,
+            "name": "Помидор",
+            "unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "c5aa2cebbb52410b933340c04dd28a59",
+                "is_error": false,
+                "name": "штука"
+            }
+        },
+        "period": "2024-July-03 00:00",
+        "size": 1,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "b11d377db9ee48eb8d63682cc5d07787",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "59ac7dc0ad584e618cf5f17af872314d",
+            "is_error": false,
+            "name": "type",
+            "type": true
+        },
+        "unit": {
+            "base_unit": "None",
+            "coefficient": 1,
+            "description": "",
+            "id": "c5aa2cebbb52410b933340c04dd28a59",
+            "is_error": false,
+            "name": "штука"
+        }
+    },
+    {
+        "description": "",
+        "id": "969df01630cc491a9a6092dbbbe4c2d3",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "338242abc19c4664a192911d2336ca54",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "2f9a029826224cadab58f21cb37a2972",
+            "is_error": false,
+            "name": "Масло",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "f797abe5543b42b2a886745306f1cc53",
+                    "is_error": false,
+                    "name": "миллилитр"
+                },
+                "coefficient": 1000,
+                "description": "",
+                "id": "745da04775004559ab1f5b80d8070063",
+                "is_error": false,
+                "name": "литр"
+            }
+        },
+        "period": "2024-August-03 00:00",
+        "size": 2,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "b46e58476b8543ff9f590ff188dd0178",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "2545e41a2147410882f174f7085f3e00",
+            "is_error": false,
+            "name": "type",
+            "type": true
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "f797abe5543b42b2a886745306f1cc53",
+                "is_error": false,
+                "name": "миллилитр"
+            },
+            "coefficient": 1000,
+            "description": "",
+            "id": "745da04775004559ab1f5b80d8070063",
+            "is_error": false,
+            "name": "литр"
+        }
+    },
+    {
+        "description": "",
+        "id": "0390b833c1ca4ecb98f858769954d5a7",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "109f32b8c46a43838a6f8903e7de3ab0",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "a4476427cdf846eba9d1a7256cca72f5",
+            "is_error": false,
+            "name": "Яичный желток",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "80444714752849149b69dca38b6d1316",
+                    "is_error": false,
+                    "name": "штука"
+                },
+                "coefficient": 10,
+                "description": "",
+                "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+                "is_error": false,
+                "name": "десяток"
+            }
+        },
+        "period": "2024-February-03 00:00",
+        "size": 3,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "0cb59698479f41248c1155799537362b",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "0e5f3ff3b6394e2bb9be79638c724808",
+            "is_error": false,
+            "name": "type",
+            "type": false
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "80444714752849149b69dca38b6d1316",
+                "is_error": false,
+                "name": "штука"
+            },
+            "coefficient": 10,
+            "description": "",
+            "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+            "is_error": false,
+            "name": "десяток"
+        }
+    },
+    {
+        "description": "",
+        "id": "732d08727c8a434a8a3d39e083c4d301",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "316f4c967e1f4084b379373b7be38b1f",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "d5d42a4f7ee34a7e83e52f506a4f5a5d",
+            "is_error": false,
+            "name": "Кабачок",
+            "unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "c5aa2cebbb52410b933340c04dd28a59",
+                "is_error": false,
+                "name": "штука"
+            }
+        },
+        "period": "2024-September-03 00:00",
+        "size": 1,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "3afa0743c152428a8e730b7b0c163665",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "c6330fcfdc1d4f9089526b57abd42787",
+            "is_error": false,
+            "name": "type",
+            "type": true
+        },
+        "unit": {
+            "base_unit": "None",
+            "coefficient": 1,
+            "description": "",
+            "id": "c5aa2cebbb52410b933340c04dd28a59",
+            "is_error": false,
+            "name": "штука"
+        }
+    },
+    {
+        "description": "",
+        "id": "5c610d73c6ad4e7a94451bbbc2133567",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "896ed07f94ab4f148d1e97d559ce0979",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "0e1f82bc7a66411fa30985a003c310b6",
+            "is_error": false,
+            "name": "Огурец",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "80444714752849149b69dca38b6d1316",
+                    "is_error": false,
+                    "name": "штука"
+                },
+                "coefficient": 10,
+                "description": "",
+                "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+                "is_error": false,
+                "name": "десяток"
+            }
+        },
+        "period": "2024-October-03 00:00",
+        "size": 2,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "87986b557f194a0182a72f65eb37ce59",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "77026f6a6fe3459db299909143eace16",
+            "is_error": false,
+            "name": "type",
+            "type": false
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "80444714752849149b69dca38b6d1316",
+                "is_error": false,
+                "name": "штука"
+            },
+            "coefficient": 10,
+            "description": "",
+            "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+            "is_error": false,
+            "name": "десяток"
+        }
+    },
+    {
+        "description": "",
+        "id": "03691f16d82d417c8944d4ffec32cc9d",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "fbc47bec7fbc4bb9b7c324104151d9bd",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "79434f80973a45f79826efdc23c09b60",
+            "is_error": false,
+            "name": "Дыня",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "80444714752849149b69dca38b6d1316",
+                    "is_error": false,
+                    "name": "штука"
+                },
+                "coefficient": 10,
+                "description": "",
+                "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+                "is_error": false,
+                "name": "десяток"
+            }
+        },
+        "period": "2024-November-03 00:00",
+        "size": 3,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "b4901fe2dc914aa9be75edad65f19999",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "9a2fe7aaa24a48c18aa6a6107994464a",
+            "is_error": false,
+            "name": "type",
+            "type": true
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "80444714752849149b69dca38b6d1316",
+                "is_error": false,
+                "name": "штука"
+            },
+            "coefficient": 10,
+            "description": "",
+            "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+            "is_error": false,
+            "name": "десяток"
+        }
+    },
+    {
+        "description": "",
+        "id": "43f0f9d65cf940be97c8e1d27bf624ac",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "19fbacc79885483e9ef2124ce6ee3d1e",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "d14c76a64df24e928821e0b836a580c9",
+            "is_error": false,
+            "name": "Сахар",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "38ea2720751146f0a023305952fcd656",
+                    "is_error": false,
+                    "name": "грамм"
+                },
+                "coefficient": 1000,
+                "description": "",
+                "id": "be3157910ce5463599ad78a413d2224f",
+                "is_error": false,
+                "name": "киллограмм"
+            }
+        },
+        "period": "2024-December-03 00:00",
+        "size": 1,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "b95ecde32bf74409a540319bdc1fdd4b",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "aa1fa1c325a94fb39af542b176febf59",
+            "is_error": false,
+            "name": "type",
+            "type": false
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "38ea2720751146f0a023305952fcd656",
+                "is_error": false,
+                "name": "грамм"
+            },
+            "coefficient": 1000,
+            "description": "",
+            "id": "be3157910ce5463599ad78a413d2224f",
+            "is_error": false,
+            "name": "киллограмм"
+        }
+    },
+    {
+        "description": "",
+        "id": "a6c297c761b34732826ffdbeb96884e7",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "76218e3161e94497b0cf78c393b70812",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "22ad513088e64aeb81a7cf4957b80c55",
+            "is_error": false,
+            "name": "Мука",
+            "unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "e410017d5baf424698ad08c4a005e07b",
+                "is_error": false,
+                "name": "грамм"
+            }
+        },
+        "period": "2024-December-06 00:00",
+        "size": 2,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "3badceebff9c4ed78480c658d554e25d",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "1c4515b693af4b0bbf1c7573d9f60429",
+            "is_error": false,
+            "name": "type",
+            "type": true
+        },
+        "unit": {
+            "base_unit": "None",
+            "coefficient": 1,
+            "description": "",
+            "id": "e410017d5baf424698ad08c4a005e07b",
+            "is_error": false,
+            "name": "грамм"
+        }
+    },
+    {
+        "description": "",
+        "id": "9e5f186e3e5649488ca9dd5c8981174a",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "655818d9022445a39caef41997da88df",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "59ea4fccbe624cef9329a8ed607a387b",
+            "is_error": false,
+            "name": "Лепешка куриная",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "80444714752849149b69dca38b6d1316",
+                    "is_error": false,
+                    "name": "штука"
+                },
+                "coefficient": 10,
+                "description": "",
+                "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+                "is_error": false,
+                "name": "десяток"
+            }
+        },
+        "period": "2024-December-07 00:00",
+        "size": 3,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "c9c9013a5dce4d4abb23668b2d6207a5",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "220ce6ea17784b8ebb9c7e837a3e6907",
+            "is_error": false,
+            "name": "type",
+            "type": false
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "80444714752849149b69dca38b6d1316",
+                "is_error": false,
+                "name": "штука"
+            },
+            "coefficient": 10,
+            "description": "",
+            "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+            "is_error": false,
+            "name": "десяток"
+        }
+    },
+    {
+        "description": "",
+        "id": "fa5d9c4b5bf943f5a74f6865d79603db",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "951c399d5af049b7b14cdc79ddbf7b2b",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "d79a7be0b2614c6aaaa7ab0310701a65",
+            "is_error": false,
+            "name": "Икра черная",
+            "unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "c5aa2cebbb52410b933340c04dd28a59",
+                "is_error": false,
+                "name": "штука"
+            }
+        },
+        "period": "2024-December-08 00:00",
+        "size": 1,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "bcd3846c1f094a69bdd95f33e2386a14",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "7c46583a8b78453da266d4ea09ef58fd",
+            "is_error": false,
+            "name": "type",
+            "type": false
+        },
+        "unit": {
+            "base_unit": "None",
+            "coefficient": 1,
+            "description": "",
+            "id": "c5aa2cebbb52410b933340c04dd28a59",
+            "is_error": false,
+            "name": "штука"
+        }
+    },
+    {
+        "description": "",
+        "id": "bff507565fee463e958495596487b0bd",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "906911f357204d1e9f5b0250af2f9c4e",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "f730137e5c7d4192be63b788482c4648",
+            "is_error": false,
+            "name": "Тесто",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "80444714752849149b69dca38b6d1316",
+                    "is_error": false,
+                    "name": "штука"
+                },
+                "coefficient": 10,
+                "description": "",
+                "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+                "is_error": false,
+                "name": "десяток"
+            }
+        },
+        "period": "2024-December-09 00:00",
+        "size": 2,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "2153575c49814265a1115dc875ea82e1",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "49bfae615cdc46908f77b810a0c1ba51",
+            "is_error": false,
+            "name": "type",
+            "type": true
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "80444714752849149b69dca38b6d1316",
+                "is_error": false,
+                "name": "штука"
+            },
+            "coefficient": 10,
+            "description": "",
+            "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+            "is_error": false,
+            "name": "десяток"
+        }
+    },
+    {
+        "description": "",
+        "id": "2c9c532ec0a943ff964078ffd26904b0",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "4f6aeb64bc7b4e7eb9fb79d23bc230d8",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "f728f933dd594e6b8ef018647f6600df",
+            "is_error": false,
+            "name": "Эспрессо",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "f797abe5543b42b2a886745306f1cc53",
+                    "is_error": false,
+                    "name": "миллилитр"
+                },
+                "coefficient": 1000,
+                "description": "",
+                "id": "745da04775004559ab1f5b80d8070063",
+                "is_error": false,
+                "name": "литр"
+            }
+        },
+        "period": "2024-December-10 00:00",
+        "size": 3,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "54e019355b6946768b95358db3a0014e",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "5383d8b23c1a4144993261ef698259ff",
+            "is_error": false,
+            "name": "type",
+            "type": false
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "f797abe5543b42b2a886745306f1cc53",
+                "is_error": false,
+                "name": "миллилитр"
+            },
+            "coefficient": 1000,
+            "description": "",
+            "id": "745da04775004559ab1f5b80d8070063",
+            "is_error": false,
+            "name": "литр"
+        }
+    },
+    {
+        "description": "",
+        "id": "48eaca8811254778bcd3331abd608214",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "ebc99ba628a34d7ebe783aa8b501fdc5",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "e7856e8a20b84e8d9106ce5aaa1a0b65",
+            "is_error": false,
+            "name": "Помидор",
+            "unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "c5aa2cebbb52410b933340c04dd28a59",
+                "is_error": false,
+                "name": "штука"
+            }
+        },
+        "period": "2024-December-29 00:00",
+        "size": 1,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "3b0637bcc758437388c5c0eb5a46f1bd",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "baa61f5dfd224fff848413ec26e1700d",
+            "is_error": false,
+            "name": "type",
+            "type": false
+        },
+        "unit": {
+            "base_unit": "None",
+            "coefficient": 1,
+            "description": "",
+            "id": "c5aa2cebbb52410b933340c04dd28a59",
+            "is_error": false,
+            "name": "штука"
+        }
+    },
+    {
+        "description": "",
+        "id": "8936735459ab4f8db04af12050a2a0db",
+        "is_error": false,
+        "name": " ",
+        "nomenclature": {
+            "description": "",
+            "group": {
+                "description": "",
+                "id": "7b63279b7b094165bbb1c5a71ceb02ac",
+                "is_error": false,
+                "name": "Ингредиенты"
+            },
+            "id": "c0cdd7d121484db0b98a6d0f38c36113",
+            "is_error": false,
+            "name": "Яйца",
+            "unit": {
+                "base_unit": {
+                    "base_unit": "None",
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "80444714752849149b69dca38b6d1316",
+                    "is_error": false,
+                    "name": "штука"
+                },
+                "coefficient": 10,
+                "description": "",
+                "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+                "is_error": false,
+                "name": "десяток"
+            }
+        },
+        "period": "2024-December-30 00:00",
+        "size": 2,
+        "storage": {
+            "address": "Lermontova, 126",
+            "description": "",
+            "id": "3df570d65c744aa1a7bb64449fd6f908",
+            "is_error": false,
+            "name": "Lermontova, 126"
+        },
+        "type": {
+            "description": "",
+            "id": "93bc5eac761a4f9290b79a86b2b8453a",
+            "is_error": false,
+            "name": "type",
+            "type": true
+        },
+        "unit": {
+            "base_unit": {
+                "base_unit": "None",
+                "coefficient": 1,
+                "description": "",
+                "id": "80444714752849149b69dca38b6d1316",
+                "is_error": false,
+                "name": "штука"
+            },
+            "coefficient": 10,
+            "description": "",
+            "id": "5df8b0adff564ac7ab80209bb4ca5dda",
+            "is_error": false,
+            "name": "десяток"
+        }
+    }
+]

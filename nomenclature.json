@@ -1,0 +1,27 @@
+{
+    "description": "",
+    "group": {
+        "description": "",
+        "id": "5faedc6d0ea0462ea5a90de54cca431e",
+        "is_error": false,
+        "name": "\u0418\u043d\u0433\u0440\u0435\u0434\u0438\u0435\u043d\u0442\u044b"
+    },
+    "id": "c539d73798af4c2e99fa5a74d039b748",
+    "is_error": false,
+    "name": "\u041c\u0443\u043a\u0430 \u043f\u0448\u0435\u043d\u0438\u0447\u043d\u0430\u044f",
+    "unit": {
+        "base_unit": {
+            "base_unit": null,
+            "coefficient": 1,
+            "description": "",
+            "id": "d43ce122a09142c4a55ef062ca00bac0",
+            "is_error": false,
+            "name": "\u0433\u0440\u0430\u043c\u043c"
+        },
+        "coefficient": 1000,
+        "description": "",
+        "id": "ee7488e3ed4a4719bfac2d8da3b11409",
+        "is_error": false,
+        "name": "\u043a\u0438\u043b\u043b\u043e\u0433\u0440\u0430\u043c\u043c"
+    }
+}
