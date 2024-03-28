@@ -41,7 +41,14 @@ class storage:
         return "groups"
       
       
-       
+    @staticmethod
+    def storage_transaction_key():
+        """
+            Список складских проводок
+        Returns:
+            _type_: _description_
+        """
+        return "transactions"  
     
 
     @staticmethod  
@@ -78,20 +85,3 @@ class storage:
                 keys.append(method())
         return keys
     
-
-    @staticmethod
-    def transaction_key():
-        """
-            Список транзакций
-        Returns:
-            _type_: _description_
-        """
-        return "transactions"
-    @staticmethod
-    def process_turn_key():
-        """
-            Список оборотов
-        Returns:
-            _type_: _description_
-        """
-        return "process_storage_turns"

@@ -92,28 +92,6 @@ class unit_model(reference):
         """
         return unit_model("штука")
     
-    @staticmethod
-    def create_tens():
-        """
-            Создать единицу изменения - десятки
-        Returns:
-            _type_: _description_
-        """
-        base = unit_model.create_ting()
-        item = unit_model("десяток", base, 10)
-        return item
-    
-    @staticmethod
-    def create_hundred():
-        """
-            Создать единицу изменения - сотни
-        Returns:
-            _type_: _description_
-        """
-        base = unit_model.create_ting()
-        item = unit_model("сотня", base, 10)
-        return item
-    
     def create_milliliter():
         """
             Создать единицу измерения - миллилитр

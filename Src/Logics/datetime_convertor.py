@@ -19,8 +19,9 @@ class datetime_convertor(convertor):
         if not isinstance(object, datetime):
           self._error.error = f"Некорректный тип данных передан для конвертации. Ожидается: datetime. Передан: {type(object)}"
           return None
+      
         try:
-            return { field: object.strftime('%Y-%B-%d %H:%M')}
+            return { field: object.strftime('%Y-%m-%d') }
         except Exception as ex:
             self.set_error(ex)    
         
