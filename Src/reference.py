@@ -18,7 +18,7 @@ class reference(ABC):
     
     def __init__(self, name):
         self._id = uuid.uuid4()
-        self._name = name
+        self.name = name
     
     @property
     def name(self):
@@ -98,6 +98,14 @@ class reference(ABC):
             str: _description_
         """
         return self.id
+    
+    def __hash__(self) -> int:
+        """
+            Формирование хеш по коду
+        Returns:
+            int: _description_
+        """
+        return hash(self.id)
     
     
                 

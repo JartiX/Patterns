@@ -1,24 +1,12 @@
-from Src.reference import reference
-from Src.Storage.storage import storage
-from Src.Models.storage_turn_model import storage_turn_model
-class process_storage_turn():
-    @staticmethod
-    def calculate(transactions: reference):
-        result = {}
-        turns = []
-        for transaction in transactions:
-            key = (transaction.nomenclature, transaction.storage, transaction.unit)
-            size = transaction.size * transaction.type.type
-            if key in result.keys():
-                result[key] += size
-            else:
-                result[key] = size
-        for k, v in result.items():
-            turn = storage_turn_model.create(k[1], v, key[0], k[2])
-            turns.append(turn)
-        return turns
-        
+from Src.Logics.processing import processing
+from Src.Logics.turn_processing import turn_processing
+from Src.Logics.transaction_processing import transaction_processing
+from Src.Models.storage_row_model import storage_row_model
+from Src.exceptions import exception_proxy, argument_exception, operation_exception
 
+#
+# Фабрика процессов обработки складских транзакций
+#
 class process_factory:
     __maps = {}
 
@@ -26,7 +14,12 @@ class process_factory:
        self.__build_structure()
 
     def __build_structure(self):
-        pass
+        """
+            Сформировать структуру
+        """
+        self.__maps[ process_factory.turn_key()]  = turn_processing
+        self.__maps[ process_factory.transaction_key()] = transaction_processing
+        
     
     def create(self, process_key:str) -> processing:
         """
@@ -57,7 +50,14 @@ class process_factory:
             str: _description_
         """
         return "turns" 
-  
+
+    def transaction_key() -> str:
+        """
+            Сформировать транзакции
+        Returns:
+            str: _description_
+        """
+        return "transactions"   
     
       
     # Код взят: https://github.com/UpTechCompany/GitExample/blob/6665bc70c4933da12f07c0a0d7a4fc638c157c40/storage/storage.py#L30

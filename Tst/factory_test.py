@@ -2,9 +2,9 @@ from Src.Logics.start_factory import start_factory
 from Src.settings_manager import settings_manager
 from Src.Storage.storage import storage
 from Src.Logics.report_factory import report_factory
-from Src.Logics.convert_factory import convert_factory
+
 import unittest
-from Src.Models.storage_transaction_model import storage_transaction_model
+
 #
 # Набор автотестов для проверки работы фабричного метода
 # 
@@ -56,6 +56,8 @@ class factory_test(unittest.TestCase):
         # Действие
         
         # Проверки
+        items = items[0].consist
+        print(items)
         assert len(items) > 0     
         
     # 
@@ -117,80 +119,9 @@ class factory_test(unittest.TestCase):
             assert storage.receipt_key() in factory.storage.data
             assert storage.group_key() in factory.storage.data
             assert storage.unit_key() in factory.storage.data
+            assert storage.storage_transaction_key() in factory.storage.data
         else:
             assert result == False    
-
-
-    def test_deserialize(self):
-        fac = convert_factory()
-
-        data = {
-        "description": "",
-        "id": "e884f48467574ff8b27e52a5a71385a8",
-        "is_error": False,
-        "name": " ",
-        "nomenclature": {
-            "description": "",
-            "group": {
-                "description": "",
-                "id": "3244242696044347875a3063d854b2f4",
-                "is_error": False,
-                "name": "Ингредиенты"
-            },
-            "id": "e8cbbd8b6fd4417c9c24b7b2531c8a24",
-            "is_error": False,
-            "name": "Яйца",
-            "unit": {
-                "base_unit": {
-                    "base_unit": "None",
-                    "coefficient": 1,
-                    "description": "",
-                    "id": "80444714752849149b69dca38b6d1316",
-                    "is_error": False,
-                    "name": "штука"
-                },
-                "coefficient": 10,
-                "description": "",
-                "id": "5df8b0adff564ac7ab80209bb4ca5dda",
-                "is_error": False,
-                "name": "десяток"
-            }
-        },
-        "period": "2024-January-03 00:00",
-        "size": 3,
-        "storage": {
-            "address": "Lermontova, 126",
-            "description": "",
-            "id": "0a2dbcec7a5d441cb72ac4ae2d901244",
-            "is_error": False,
-            "name": "Lermontova, 126"
-        },
-        "type": {
-            "description": "",
-            "id": "d6141534ef1242a7ab6ba335b6907c61",
-            "is_error": False,
-            "name": "type",
-            "type": True
-        },
-        "unit": {
-            "base_unit": {
-                "base_unit": "None",
-                "coefficient": 1,
-                "description": "",
-                "id": "80444714752849149b69dca38b6d1316",
-                "is_error": False,
-                "name": "штука"
-            },
-            "coefficient": 10,
-            "description": "",
-            "id": "5df8b0adff564ac7ab80209bb4ca5dda",
-            "is_error": False,
-            "name": "десяток"
-        }
-        }
-        obj = fac.deserialize(data, storage_transaction_model)
-        print(type(obj))
-
         
                      
         

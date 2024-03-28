@@ -42,7 +42,68 @@ class storage_prototype(error_proxy):
                 result.append(item)
                 
         return   storage_prototype( result )
+    
+    def filter_by_nomenclature( self, id: str):
+        """
+            Отфильтровать по номенклатуре
+        """
+        if len(self.__data) <= 0:
+            self.error = "Некорректно переданы параметры!"
+            
+         
+        if not self.is_empty:
+            return self.__data
+        
+        result = []
+        for item in self.__data:
+            if item.nomenclature.id == id:
+                result.append(item)
+                
+        return   storage_prototype( result )
+    
+    def filter_by_receipt(self, receipt: reference):
+        """
+            Отфильтровать по рецепту
+        """
+        if len(self.__data) <= 0:
+            self.error = "Некорректно переданы параметры!"
+            
+         
+        if not self.is_empty:
+            return self.__data
+        
+        nomens = []
+        for item in receipt.consist.values():
+            nomens.append(item.nomenclature.id)
+        
+        result = []
+        for item in self.__data:
+            if item.nomenclature.id in nomens:
+                result.append(item)
 
+        
+                
+        return storage_prototype( result )
+    
+    def filter_by_storage(self, storage: storage_model):
+        """
+            Отфильтровать по рецепту
+        """
+        if len(self.__data) <= 0:
+            self.error = "Некорректно переданы параметры!"
+            
+         
+        if not self.is_empty:
+            return self.__data
+        
+        result = []
+        for item in self.__data:
+            if item.storage.address == storage.address:
+                result.append(item)
+
+        
+                
+        return storage_prototype( result )
     
     @property
     def data(self):
