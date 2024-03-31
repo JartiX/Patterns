@@ -56,8 +56,6 @@ class factory_test(unittest.TestCase):
         # Действие
         
         # Проверки
-        items = items[0].consist
-        print(items)
         assert len(items) > 0     
         
     # 

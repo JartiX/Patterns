@@ -166,13 +166,14 @@ class storage_row_model(reference):
         self._period = value
         
     @staticmethod    
-    def create_credit_row(nomenclature_name: str, details: list, data: dict, _storage: storage_model) -> reference:
+    def create_credit_row(nomenclature_name: str, quantity, unit_name: str, data: dict, _storage: storage_model) -> reference:
         """
             Фабричный метод для создания транзакции на поступление
-            Используется в start_factoryu
+            Используется в start_factory
         Args:
             nomenclature_name (str): Наименование номенклатуры
-            details (list): список типа [0.1, "литр"] 
+            quantity(int, float): Количество
+            unit_name (str): Наименование единицы измерения
             data (dict): исходный набор данных
             storage(storage_model): склад
         Returns:
@@ -180,35 +181,19 @@ class storage_row_model(reference):
         """
         exception_proxy.validate(nomenclature_name, str)
         exception_proxy.validate(_storage, storage_model)
-        if details is None:
-            raise argument_exception("Некорректно переданы параметры!")
-        
-        if len(details) < 2:
-            raise argument_exception("Некорректно переданы параметры!")
-        
-        quantity = details[0]
-        unit_name = details[1]
-        exception_proxy.validate(quantity, (float, int))
+        exception_proxy.validate(quantity, (int, float))
         exception_proxy.validate(unit_name, str)
         
-        # Подготовим словарь со списком номенклатуры
+        
+        # Определим номенклатуру
         items = data[ storage.nomenclature_key() ]    
         nomenclatures = reference.create_dictionary(items)
-        
-        # Определеяем номенклатуру
-        keys = list(filter(lambda x: x == nomenclature_name, nomenclatures.keys() ))
-        if len(keys) == 0:
-            raise operation_exception(f"Некоректно передан список. Не найдена номенклатура {nomenclature_name}!")
-        nomenclature = nomenclatures[keys[0]]    
-        
+        nomenclature = nomenclature_model.get( nomenclature_name, nomenclatures)
+
+        # Определяем единицу измерения
         items = data[ storage.unit_key()]
         units = reference.create_dictionary(items)
-        
-        # Определяем единицу измерения
-        keys = list(filter(lambda x: x == unit_name, units.keys() ))
-        if len(keys) == 0:
-            raise operation_exception(f"Некорректно передан список. Не найдена единица измерения {unit_name}!")
-        unit = units[keys[0]]
+        unit = unit_model.get(unit_name, units )
         
         start_date = datetime.strptime("2024-01-01", "%Y-%m-%d")
         stop_date = datetime.strptime("2024-02-01", "%Y-%m-%d")

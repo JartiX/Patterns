@@ -1,7 +1,7 @@
-from Src.exceptions import argument_exception
+from Src.exceptions import argument_exception, exception_proxy
 from Src.errors import error_proxy
 from datetime import datetime
-from Src.reference import reference
+from Src.Models.nomenclature_model import nomenclature_model
 from Src.Models.storage_model import storage_model
 #
 # Прототип для обработки складских транзакций
@@ -11,21 +11,28 @@ class storage_prototype(error_proxy):
     
     def __init__(self, data: list) -> None:
         if len(data) <= 0:
-            self.error = "Некорректно переданы параметры!"
+            self.error = "Набор данных пуст!"
         
+        exception_proxy.validate(data, list)
         self.__data = data
+        self.clear()
 
-    def filter( self,start_period: datetime, stop_period: datetime  ):
+    # Методы фильтрации
+
+    def filter_by_period( self,start_period: datetime, stop_period: datetime  ):
         """
             Отфильтровать по периоду
         Args:
-            data (list): список складских транзакций
             start_period (datetime): начало
             stop_period (datetime): окончание
 
         Returns:
             storage_prototype: _description_
         """
+        self.clear()
+        
+        exception_proxy.validate(start_period, datetime)
+        exception_proxy.validate(stop_period, datetime)
         if len(self.__data) <= 0:
             self.error = "Некорректно переданы параметры!"
             
@@ -43,47 +50,26 @@ class storage_prototype(error_proxy):
                 
         return   storage_prototype( result )
     
-    def filter_by_nomenclature( self, id: str):
+    
+    def filter_by_nomenclature(self, nomenclature:  nomenclature_model):
         """
             Отфильтровать по номенклатуре
+        Args:
+            nomenclature (nomenclature_model): _description_
+
+        Returns:
+            storage_prototype: _description_
         """
-        if len(self.__data) <= 0:
-            self.error = "Некорректно переданы параметры!"
-            
-         
-        if not self.is_empty:
-            return self.__data
+        self.clear()
+        
+        exception_proxy.validate(nomenclature, nomenclature_model)
         
         result = []
         for item in self.__data:
-            if item.nomenclature.id == id:
+            if item.nomenclature.id == nomenclature.id:
                 result.append(item)
                 
         return   storage_prototype( result )
-    
-    def filter_by_receipt(self, receipt: reference):
-        """
-            Отфильтровать по рецепту
-        """
-        if len(self.__data) <= 0:
-            self.error = "Некорректно переданы параметры!"
-            
-         
-        if not self.is_empty:
-            return self.__data
-        
-        nomens = []
-        for item in receipt.consist.values():
-            nomens.append(item.nomenclature.id)
-        
-        result = []
-        for item in self.__data:
-            if item.nomenclature.id in nomens:
-                result.append(item)
-
-        
-                
-        return storage_prototype( result )
     
     def filter_by_storage(self, storage: storage_model):
         """
@@ -101,14 +87,28 @@ class storage_prototype(error_proxy):
             if item.storage.address == storage.address:
                 result.append(item)
 
-        
-                
         return storage_prototype( result )
+        
+    # Методы фильтрации    
     
     @property
     def data(self):
+        """
+            Полученные данные
+        Returns:
+            _type_: _description_
+        """
         return self.__data         
                 
+    @data.setter            
+    def data(self, value: list):
+        """
+            Исходные данные
+        Args:
+            value (list): _description_
+        """
+        exception_proxy.validate(value, list)
+        self.__data = value            
                    
             
             
