@@ -1,5 +1,10 @@
 from Src.reference import reference
 from Src.exceptions import exception_proxy, operation_exception
+<<<<<<< Updated upstream
+=======
+from Src.Models.unit_model import unit_model
+from Src.Models.group_model import group_model
+>>>>>>> Stashed changes
 
 
 class nomenclature_model(reference):
@@ -9,7 +14,7 @@ class nomenclature_model(reference):
     _unit = None
     
     
-    def __init__(self, name:str, group: reference = None, unit: reference = None):
+    def __init__(self, name:str = None, group: reference = None, unit: reference = None):
         """_summary_
 
         Args:
@@ -29,7 +34,7 @@ class nomenclature_model(reference):
         super().__init__(name)
     
     @property
-    def group(self):
+    def group(self) -> group_model:
         " Группа номенклатуры "
         return self._group
     
@@ -40,7 +45,7 @@ class nomenclature_model(reference):
         self._group = value    
     
     @property
-    def unit(self):
+    def unit(self) -> unit_model:
         " Единица измерения "
         return self._unit
     
@@ -50,6 +55,27 @@ class nomenclature_model(reference):
         exception_proxy.validate(value, reference)
         self._unit = value
         
+<<<<<<< Updated upstream
+=======
+    def load(self, source: dict):
+        """
+            Загрузить данные
+        Args:
+            source (dict): исходный словарь
+        """
+        super().load(source)
+        if source is None:
+            return None
+        
+        source_fields = ["unit", "group"]
+        if set(source_fields).issubset(list(source.keys())) == False:
+            raise operation_exception(f"Невозможно загрузить данные в объект {self}!")
+        
+        self._group = group_model().load(source["group"])
+        self._unit = unit_model().load(source["unit"])    
+        
+        return self
+>>>>>>> Stashed changes
         
     # Фабричные методы
     

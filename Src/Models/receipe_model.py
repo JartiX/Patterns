@@ -22,7 +22,11 @@ class receipe_model(reference):
     # Описание
     _comments: str = ""
     
+<<<<<<< Updated upstream
     def __init__(self, name):
+=======
+    def __init__(self, name = None):
+>>>>>>> Stashed changes
         super().__init__(name)
         self._rows = {}
         self._instructions = []
@@ -61,7 +65,7 @@ class receipe_model(reference):
             self._brutto += self._rows[position].size 
             
     @property     
-    def brutto(self):
+    def brutto(self) -> int:
         """
             Вес брутто
         Returns:
@@ -70,7 +74,7 @@ class receipe_model(reference):
         return self._brutto
     
     @brutto.setter
-    def brutto(self, value: int) -> int:
+    def brutto(self, value: int):
         exception_proxy.validate(value, int)
         self._brutto = value     
             
@@ -90,7 +94,7 @@ class receipe_model(reference):
         self._netto = value
         
     @property    
-    def instructions(self):
+    def instructions(self) -> list:
         """
            Инструкции для приготовления
         Returns:
@@ -99,7 +103,7 @@ class receipe_model(reference):
         return self._instructions  
     
     @property
-    def comments(self):
+    def comments(self) -> str:
         return self._comments
     
       
@@ -122,7 +126,11 @@ class receipe_model(reference):
         """
         return self._rows    
     
+<<<<<<< Updated upstream
     def rows(self):
+=======
+    def rows(self) -> list:
+>>>>>>> Stashed changes
         """
             Получить состав рецепта (read only)
         Returns:
@@ -134,6 +142,39 @@ class receipe_model(reference):
             
         return result
     
+<<<<<<< Updated upstream
+=======
+    def load(self,  source: dict):
+        """
+            Загрузить данные из словаря
+        Args:
+            source (dict): исходный словарь
+
+        """
+        super().load(source)
+        if source is None:
+            return None
+        
+        source_fields = ["comments", "consist", "instructions","netto", "brutto"]
+        if set(source_fields).issubset(list(source.keys())) == False:
+            raise operation_exception(f"Невозможно загрузить данные в объект {source}!")
+        
+        self._netto = source["netto"]
+        self._brutto = source["brutto"]
+        
+        # Загрузим состав
+        for item in source["consist"].items():
+            row = item[1]
+            if row is not None:
+                value = receipe_row_model().load(row)
+                self.add(value)
+            
+        # Загрузим инструкции
+        self._instructions = source["instructions"]
+        return self
+            
+    
+>>>>>>> Stashed changes
     
     @staticmethod
     def create_receipt(name: str, comments: str, items: list, data: list):
@@ -175,7 +216,10 @@ class receipe_model(reference):
                 unit = nomenclature.unit.base_unit    
             
             # Создаем запись в рецепте
-            row = receipe_row_model(nomenclature, size, unit)
+            row = receipe_row_model()
+            row.nomenclature = nomenclature
+            row.size = size
+            row.unit = unit
             receipt.add(row)
         
         return receipt

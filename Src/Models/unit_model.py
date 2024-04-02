@@ -14,7 +14,7 @@ class unit_model(reference):
     # Коэффициент пересчета к базовой единице измерения
     __coefficient: int = 1
     
-    def __init__(self, name: str, base: reference = None, coeff: int = 1 ):
+    def __init__(self, name: str = None, base: reference = None, coeff: int = 1 ):
         super().__init__(name)
         
         if base != None:
@@ -41,7 +41,7 @@ class unit_model(reference):
         
     
     @property    
-    def coefficient(self):
+    def coefficient(self) -> int:
         """
             Коэффициент пересчета
         Returns:
@@ -57,6 +57,27 @@ class unit_model(reference):
             raise argument_exception("Значение коэффициента должно быть > 1!")
         
         self.__coefficient = value  
+        
+    def load(self, source: dict):
+        """
+            Загрузить данные
+        Args:
+            source (dict): исходный словарь
+
+        """
+        super().load(source)
+        if source is None:
+            return None
+        
+        source_fields = ["coefficient", "base_unit"]
+        if set(source_fields).issubset(list(source.keys())) == False:
+            raise operation_exception(f"Невозможно загрузить данные в объект {source}!")
+        
+        self.__coefficient = source["coefficient"]
+        self.__base_unit = unit_model().load(source["base_unit"])
+            
+        return self    
+             
         
         
     # Фабричные методы    

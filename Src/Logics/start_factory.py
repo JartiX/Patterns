@@ -156,7 +156,11 @@ class start_factory:
             raise argument_exception("Некорректно переданы параметры! Список номенклатуры пуст.")        
         
         # Вафли хрустящие в вафильнице
+<<<<<<< Updated upstream
         items = [ ("Мука пшеничная",  100), ("Сахар",  40), ("Сливочное масло", 70),
+=======
+        items = [ ("Мука пшеничная",  100), ("Сахар",  80), ("Сливочное масло", 70),
+>>>>>>> Stashed changes
                   ("Яйца", 1)
                 ]
         item = receipe_model.create_receipt("Вафли хрустящие в вафильнице", "", items, data)
@@ -220,7 +224,11 @@ class start_factory:
                   ( "Ванилиин", 100, "грамм" ),
                   ( "Соль", 1, "киллограмм" )
                   ]
+<<<<<<< Updated upstream
         cnt = 1
+=======
+        
+>>>>>>> Stashed changes
         for element in items:
             if len(element) < 3:
                 raise operation_exception("Некорректно сформирован список для генерации рецептов!")
@@ -228,12 +236,17 @@ class start_factory:
             nomenclature_name = element[0]
             quantity =  element[1]
             unit_name = element[2]
+<<<<<<< Updated upstream
             if cnt % 2 == 0:
                 row = storage_row_model.create_credit_row(nomenclature_name, quantity, unit_name , data, default_storage)
             else:
                 row = storage_row_model.create_credit_row(nomenclature_name, quantity, unit_name , data, another_storage)
             cnt += 1
 
+=======
+            
+            row = storage_row_model.create_credit_row(nomenclature_name, quantity, unit_name , data, default_storage)
+>>>>>>> Stashed changes
             result.append(row)
         
         return result
@@ -246,41 +259,50 @@ class start_factory:
         Returns:
             _type_: _description_
         """
+
+        if self.__storage == None:
+            self.__storage = storage()
+
         if self.__oprions.is_first_start == True:
-            # 1. Формируем и зпоминаем номеклатуру
-            nomenclatures = start_factory.create_nomenclatures()
-            self.__save( storage.nomenclature_key(), nomenclatures )
+
+            try:
+                # 1. Формируем и зпоминаем номеклатуру
+                nomenclatures = start_factory.create_nomenclatures()
+                self.__save( storage.nomenclature_key(), nomenclatures )
+                    
+                # 2. Формируем и запоминаем рецепты
+                items = start_factory.create_receipts(nomenclatures)
+                self.__save( storage.receipt_key(), items)
             
-            # 2. Формируем и запоминаем рецепты
-            items = start_factory.create_receipts(nomenclatures)
-            self.__save( storage.receipt_key(), items)
-      
-            # 3. Формируем и запоминаем единицы измерения
-            items = start_factory.create_units()
-            self.__save( storage.unit_key(), items)
+                # 3. Формируем и запоминаем единицы измерения
+                items = start_factory.create_units()
+                self.__save( storage.unit_key(), items)
+                    
+                # 4. Формируем и запоминаем группы номенклатуры
+                items = start_factory.create_groups()
+                self.__save( storage.group_key(), items)
+                    
+                # 5. Формируем типовые складские проводки
+                items = start_factory.create_storage_transactions( self.storage.data )
+                self.__save( storage.storage_transaction_key(), items)
             
-            # 4. Формируем и запоминаем группы номенклатуры
-            items = start_factory.create_groups()
-            self.__save( storage.group_key(), items)
-            
-            # 5. Формируем типовые складские проводки
-            items = start_factory.create_storage_transactions( self.storage.data )
-            self.__save( storage.storage_transaction_key(), items)
-            
-            return True
-           
-           
+            except Exception as ex:
+                raise operation_exception(f"Ошибка при формировании шаблонных данных!\n{ex}")        
+                    
         else:
             # Другой вариант. Загрузка из источника данных    
-            return False
+            try:
+                self.__storage.load()
+            except Exception as ex:
+                raise operation_exception(f"Ошибка при формировании шаблонных данных!\n{ex}")     
+
+            
+        
+            
+            
+            
+            
         
         
-    
         
         
-        
-        
-    
-    
-    
-    
