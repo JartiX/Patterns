@@ -2,11 +2,7 @@ from Src.exceptions import argument_exception, exception_proxy
 from Src.errors import error_proxy
 from datetime import datetime
 from Src.Models.nomenclature_model import nomenclature_model
-<<<<<<< Updated upstream
-from Src.Models.storage_model import storage_model
-=======
 
->>>>>>> Stashed changes
 #
 # Прототип для обработки складских транзакций
 #
@@ -74,27 +70,6 @@ class storage_prototype(error_proxy):
                 result.append(item)
                 
         return   storage_prototype( result )
-<<<<<<< Updated upstream
-    
-    def filter_by_storage(self, storage: storage_model):
-        """
-            Отфильтровать по рецепту
-        """
-        if len(self.__data) <= 0:
-            self.error = "Некорректно переданы параметры!"
-            
-         
-        if not self.is_empty:
-            return self.__data
-        
-        result = []
-        for item in self.__data:
-            if item.storage.address == storage.address:
-                result.append(item)
-
-        return storage_prototype( result )
-=======
->>>>>>> Stashed changes
         
     # Методы фильтрации    
     

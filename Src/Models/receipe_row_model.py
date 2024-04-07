@@ -1,11 +1,7 @@
 from Src.reference import reference
 from Src.Models.nomenclature_model import nomenclature_model
 from Src.Models.unit_model import unit_model
-<<<<<<< Updated upstream
-from Src.exceptions import exception_proxy
-=======
 from Src.exceptions import exception_proxy, operation_exception
->>>>>>> Stashed changes
 from Src.Models.storage_row_model import storage_row_model
 from Src.Models.storage_model import storage_model
 
@@ -65,8 +61,6 @@ class receipe_row_model(reference):
         """
         return self.__unit    
     
-<<<<<<< Updated upstream
-=======
     @unit.setter
     def unit(self, value: unit_model):
         exception_proxy.validate(value, unit_model)
@@ -91,7 +85,6 @@ class receipe_row_model(reference):
         self.__unit = unit_model().load(source["unit"])
     
         return self
->>>>>>> Stashed changes
     
     @staticmethod
     def create_debit_transaction( row, period : datetime, storage: storage_model ) -> storage_row_model:

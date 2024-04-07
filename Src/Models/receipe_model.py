@@ -22,11 +22,7 @@ class receipe_model(reference):
     # Описание
     _comments: str = ""
     
-<<<<<<< Updated upstream
-    def __init__(self, name):
-=======
     def __init__(self, name = None):
->>>>>>> Stashed changes
         super().__init__(name)
         self._rows = {}
         self._instructions = []
@@ -126,11 +122,7 @@ class receipe_model(reference):
         """
         return self._rows    
     
-<<<<<<< Updated upstream
-    def rows(self):
-=======
     def rows(self) -> list:
->>>>>>> Stashed changes
         """
             Получить состав рецепта (read only)
         Returns:
@@ -142,8 +134,6 @@ class receipe_model(reference):
             
         return result
     
-<<<<<<< Updated upstream
-=======
     def load(self,  source: dict):
         """
             Загрузить данные из словаря
@@ -174,7 +164,6 @@ class receipe_model(reference):
         return self
             
     
->>>>>>> Stashed changes
     
     @staticmethod
     def create_receipt(name: str, comments: str, items: list, data: list):

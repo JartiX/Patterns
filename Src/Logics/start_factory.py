@@ -156,11 +156,7 @@ class start_factory:
             raise argument_exception("Некорректно переданы параметры! Список номенклатуры пуст.")        
         
         # Вафли хрустящие в вафильнице
-<<<<<<< Updated upstream
-        items = [ ("Мука пшеничная",  100), ("Сахар",  40), ("Сливочное масло", 70),
-=======
         items = [ ("Мука пшеничная",  100), ("Сахар",  80), ("Сливочное масло", 70),
->>>>>>> Stashed changes
                   ("Яйца", 1)
                 ]
         item = receipe_model.create_receipt("Вафли хрустящие в вафильнице", "", items, data)
@@ -199,9 +195,6 @@ class start_factory:
         """
         result = []
         default_storage = storage_model.create_default()
-
-        another_storage = storage_model("not default")
-        another_storage.address = "г. Иркутск. ул. Пушкина, 10"
             
         if len(data.keys()) == 0:
             raise operation_exception("Набор данных пуст. Невозможно сформировать список транзакций!")  
@@ -224,11 +217,7 @@ class start_factory:
                   ( "Ванилиин", 100, "грамм" ),
                   ( "Соль", 1, "киллограмм" )
                   ]
-<<<<<<< Updated upstream
-        cnt = 1
-=======
         
->>>>>>> Stashed changes
         for element in items:
             if len(element) < 3:
                 raise operation_exception("Некорректно сформирован список для генерации рецептов!")
@@ -236,17 +225,8 @@ class start_factory:
             nomenclature_name = element[0]
             quantity =  element[1]
             unit_name = element[2]
-<<<<<<< Updated upstream
-            if cnt % 2 == 0:
-                row = storage_row_model.create_credit_row(nomenclature_name, quantity, unit_name , data, default_storage)
-            else:
-                row = storage_row_model.create_credit_row(nomenclature_name, quantity, unit_name , data, another_storage)
-            cnt += 1
-
-=======
             
             row = storage_row_model.create_credit_row(nomenclature_name, quantity, unit_name , data, default_storage)
->>>>>>> Stashed changes
             result.append(row)
         
         return result

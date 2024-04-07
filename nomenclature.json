@@ -2,19 +2,11 @@
     "description": "",
     "group": {
         "description": "",
-<<<<<<< Updated upstream
-        "id": "69b8a76dcbf04411a7c324675ba1d1df",
-        "is_error": false,
-        "name": "\u0418\u043d\u0433\u0440\u0435\u0434\u0438\u0435\u043d\u0442\u044b"
-    },
-    "id": "adeefa2f282a48738f8c75297ae31fcb",
-=======
         "id": "0b41b53b670044e6ad6ab17ba392cfed",
         "is_error": false,
         "name": "\u0418\u043d\u0433\u0440\u0435\u0434\u0438\u0435\u043d\u0442\u044b"
     },
     "id": "ebb4e3edcd9d430181dc8fdb94b6b462",
->>>>>>> Stashed changes
     "is_error": false,
     "name": "\u041c\u0443\u043a\u0430 \u043f\u0448\u0435\u043d\u0438\u0447\u043d\u0430\u044f",
     "unit": {
@@ -22,21 +14,13 @@
             "base_unit": null,
             "coefficient": 1,
             "description": "",
-<<<<<<< Updated upstream
-            "id": "7188289957044d26abec0ef2d541275c",
-=======
             "id": "2d09b396c117440394b45b41134ee3eb",
->>>>>>> Stashed changes
             "is_error": false,
             "name": "\u0433\u0440\u0430\u043c\u043c"
         },
         "coefficient": 1000,
         "description": "",
-<<<<<<< Updated upstream
-        "id": "772c54ecd177469781f0fc0a13a4c176",
-=======
         "id": "3f8472e8d0bb4d96b6511581125d051c",
->>>>>>> Stashed changes
         "is_error": false,
         "name": "\u043a\u0438\u043b\u043b\u043e\u0433\u0440\u0430\u043c\u043c"
     }

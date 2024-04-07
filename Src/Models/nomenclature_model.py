@@ -1,10 +1,7 @@
 from Src.reference import reference
 from Src.exceptions import exception_proxy, operation_exception
-<<<<<<< Updated upstream
-=======
 from Src.Models.unit_model import unit_model
 from Src.Models.group_model import group_model
->>>>>>> Stashed changes
 
 
 class nomenclature_model(reference):
@@ -55,8 +52,6 @@ class nomenclature_model(reference):
         exception_proxy.validate(value, reference)
         self._unit = value
         
-<<<<<<< Updated upstream
-=======
     def load(self, source: dict):
         """
             Загрузить данные
@@ -75,7 +70,6 @@ class nomenclature_model(reference):
         self._unit = unit_model().load(source["unit"])    
         
         return self
->>>>>>> Stashed changes
         
     # Фабричные методы
     

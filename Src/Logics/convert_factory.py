@@ -81,11 +81,7 @@ class convert_factory:
                         # Вложенный словарь
                         result[field] = dictionary    
                 except:
-<<<<<<< Updated upstream
-                    raise operation_exception(f"Невозможно сконвертировать объект в набор словарей. Поле {field}, значение: {dictionary}")           
-=======
                     raise operation_exception(f"Невозможно сериализовать объект в набор словарей. Поле {field}, значение: {dictionary}")           
->>>>>>> Stashed changes
           
         return result  
     
