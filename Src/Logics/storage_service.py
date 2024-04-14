@@ -90,7 +90,6 @@ class storage_service:
         filter = filter.filter_by_nomenclature( nomenclature )
         if not filter.is_empty:
             raise operation_exception(f"Невозможно сформировать обороты по указанным данных: {filter.error}")
-            
         return self.__processing( filter. data )    
     
     def create_turns_only_nomenclature(self, nomenclature: nomenclature_model) -> list:
