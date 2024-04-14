@@ -38,6 +38,7 @@ class storage_service:
         self.__data=data
 
 
+
     def create_turns_by_nomenclature(self,start_date:datetime,finish_date:datetime,id:uuid.UUID)->dict:
         if not isinstance(start_date,datetime) or not isinstance(finish_date,datetime):
             raise argument_exception("Неверный аргумент")
@@ -188,16 +189,6 @@ class storage_service:
 
         return result
     
-    def create_blocked_turns(self)->dict:
-        prototype=storage_prototype(self.__data)
-
-        transactions=prototype.filter_date(datetime(1999,1,1),self.__options.block_period)
-        
-        proces=process_factory()
-        data=proces.create(storage.process_turn_key(),transactions.data)
-
-        self.__blocked=data
-        return data
         
     @staticmethod
     def create_response(data:dict,app):
