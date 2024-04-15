@@ -38,7 +38,41 @@ class storage_service:
         self.__data=data
 
 
+    @property
+    def options(self):
+        return self.__options
+    
+    @options.setter
+    def options(self,value:settings):
+        if not isinstance(value,settings):
+            raise argument_exception("неверный аргумент")
+        self.__options=value
 
+    @staticmethod
+    def _colide_turns(base_turns:list,added_turns:list):
+        if len(added_turns)==0:
+            return base_turns
+        for index,cur_base_turn in enumerate(base_turns):            
+            for aded_index,cur_added_turn in enumerate(added_turns):
+                if cur_base_turn.nomenclature==cur_added_turn.nomenclature and cur_base_turn.storage_id==cur_added_turn.storage_id:
+                    base_turns[index].amount+=cur_added_turn.amount
+                    added_turns.pop(aded_index)
+                    break
+                
+        for cur_added_turn in added_turns:
+            base_turns.append(cur_added_turn)
+        return base_turns
+
+    def create_blocked_turns(self)->dict:
+        prototype=storage_prototype(self.__data)
+
+        transactions=prototype.filter_date(datetime(1999,1,1),self.__options.block_period)
+        
+        proces=process_factory()
+        data=proces.create(storage.process_turn_key(),transactions.data)
+
+        self.__blocked=data
+        return data
     def create_turns_by_nomenclature(self,start_date:datetime,finish_date:datetime,id:uuid.UUID)->dict:
         if not isinstance(start_date,datetime) or not isinstance(finish_date,datetime):
             raise argument_exception("Неверный аргумент")
@@ -189,6 +223,7 @@ class storage_service:
 
         return result
     
+        
         
     @staticmethod
     def create_response(data:dict,app):
