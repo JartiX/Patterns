@@ -4,7 +4,6 @@ from settings import settings
 from pathlib import Path
 import os
 import sys
-import json
 from datetime import datetime
 
 sys.path.append(os.path.join(Path(__file__).parent.parent, 'Src'))

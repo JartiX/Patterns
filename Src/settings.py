@@ -1,7 +1,5 @@
-from exceptions import argument_exception, operation_exception
+from exceptions import argument_exception
 from datetime import datetime
-from Logic.storage_observer import storage_observer
-from Models.event_type import event_type
 
 
 class settings:
